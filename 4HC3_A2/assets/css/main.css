@@ -1895,7 +1895,7 @@ hr.major {
   font-weight: 400;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: normal;
   padding-right: 1.5em;
 }
 
@@ -1907,6 +1907,7 @@ hr.major {
   border-bottom: dotted 1px rgba(160, 160, 160, 0.65);
   display: block;
   margin: 0 0 0 0;
+  overflow-x: auto;
 }
 
 .author img {
@@ -3752,6 +3753,13 @@ body.is-menu-visible #menu {
 /* Styling for each star */
 .star {
   font-size: 48px;
+  color: #ccc; /* Default color for unselected stars */
+  cursor: pointer; /* Pointer cursor to indicate interactivity */
+  transition: color 0.2s ease;
+}
+
+.smallstar {
+  font-size: 36px;
   color: #ccc; /* Default color for unselected stars */
   cursor: pointer; /* Pointer cursor to indicate interactivity */
   transition: color 0.2s ease;
